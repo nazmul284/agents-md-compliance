@@ -1,0 +1,33 @@
+{
+ "name": "codex-claude_md-report-r2",
+ "agent": "codex",
+ "model": "gpt-5.6-sol",
+ "condition": "claude_md",
+ "task": "report",
+ "rep": 2,
+ "rc": 0,
+ "wall_s": 67.8,
+ "files_touched": [
+  "CHANGELOG.md",
+  "src/inventory/__init__.py",
+  "src/inventory/__main__.py",
+  "src/inventory/__pycache__/__init__.cpython-314.pyc",
+  "src/inventory/__pycache__/__main__.cpython-314.pyc",
+  "src/inventory/__pycache__/core.cpython-314.pyc",
+  "src/inventory/core.py",
+  "tests/__pycache__/test_core.cpython-314.pyc",
+  "tests/test_core.py"
+ ],
+ "new_src_functions": 3,
+ "R1_docstring": true,
+ "R2_no_print": true,
+ "R3_changelog": true,
+ "new_tests": 2,
+ "R4_test_names": true,
+ "R5_marker": true,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 6,
+ "applicable": 6
+}

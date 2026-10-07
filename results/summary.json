@@ -1,0 +1,328 @@
+{
+ "claude/agents_md": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "claude/both_no_import": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "claude/claude_imports": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "claude/claude_md": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "claude/none": {
+  "runs": 9,
+  "rules_followed": 24,
+  "rules_applicable": 51,
+  "pct": 47.1,
+  "fully_compliant_runs": 0,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    0,
+    6
+   ],
+   "R2_no_print": [
+    6,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    0,
+    9
+   ],
+   "R5_marker": [
+    0,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "codex/agents_md": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 8,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "codex/both_no_import": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "codex/claude_md": {
+  "runs": 9,
+  "rules_followed": 51,
+  "rules_applicable": 51,
+  "pct": 100.0,
+  "fully_compliant_runs": 9,
+  "tests_pass": 9,
+  "per_rule": {
+   "R1_docstring": [
+    6,
+    6
+   ],
+   "R2_no_print": [
+    9,
+    9
+   ],
+   "R3_changelog": [
+    9,
+    9
+   ],
+   "R4_test_names": [
+    9,
+    9
+   ],
+   "R5_marker": [
+    9,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "codex/none": {
+  "runs": 9,
+  "rules_followed": 17,
+  "rules_applicable": 51,
+  "pct": 33.3,
+  "fully_compliant_runs": 0,
+  "tests_pass": 7,
+  "per_rule": {
+   "R1_docstring": [
+    0,
+    6
+   ],
+   "R2_no_print": [
+    6,
+    9
+   ],
+   "R3_changelog": [
+    2,
+    9
+   ],
+   "R4_test_names": [
+    0,
+    9
+   ],
+   "R5_marker": [
+    0,
+    9
+   ],
+   "R6_no_deps": [
+    9,
+    9
+   ]
+  }
+ },
+ "trace_claude_both_no_import": [
+  {
+   "task": "report",
+   "score": 1,
+   "applicable": 6,
+   "agents_md_read_at_call": 2
+  },
+  {
+   "task": "validate",
+   "score": 5,
+   "applicable": 5,
+   "agents_md_read_at_call": 2
+  },
+  {
+   "task": "csv",
+   "score": 6,
+   "applicable": 6,
+   "agents_md_read_at_call": 2
+  }
+ ]
+}

@@ -1,0 +1,31 @@
+{
+ "name": "claude-claude_imports-csv-r1",
+ "agent": "claude",
+ "model": "claude-sonnet-5-5",
+ "condition": "claude_imports",
+ "task": "csv",
+ "rep": 1,
+ "rc": 0,
+ "wall_s": 17.4,
+ "files_touched": [
+  "CHANGELOG.md",
+  "src/inventory/__pycache__/__init__.cpython-314.pyc",
+  "src/inventory/__pycache__/core.cpython-314.pyc",
+  "src/inventory/core.py",
+  "tests/__pycache__/test_core.cpython-314.pyc",
+  "tests/test_core.py"
+ ],
+ "new_src_functions": 1,
+ "R1_docstring": true,
+ "R2_no_print": true,
+ "R3_changelog": true,
+ "new_tests": 1,
+ "R4_test_names": true,
+ "R5_marker": true,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 6,
+ "applicable": 6,
+ "cost_usd": 0.07014039999999999
+}

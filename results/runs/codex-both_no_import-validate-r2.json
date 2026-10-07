@@ -1,0 +1,27 @@
+{
+ "name": "codex-both_no_import-validate-r2",
+ "agent": "codex",
+ "model": "gpt-5.6-sol",
+ "condition": "both_no_import",
+ "task": "validate",
+ "rep": 2,
+ "rc": 0,
+ "wall_s": 55.2,
+ "files_touched": [
+  "CHANGELOG.md",
+  "src/inventory/core.py",
+  "tests/test_core.py"
+ ],
+ "new_src_functions": 0,
+ "R1_docstring": null,
+ "R2_no_print": true,
+ "R3_changelog": true,
+ "new_tests": 1,
+ "R4_test_names": true,
+ "R5_marker": true,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 5,
+ "applicable": 5
+}

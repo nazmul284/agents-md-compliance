@@ -1,0 +1,31 @@
+{
+ "name": "claude-both_no_import-validate-r2",
+ "agent": "claude",
+ "model": "claude-sonnet-5-5",
+ "condition": "both_no_import",
+ "task": "validate",
+ "rep": 2,
+ "rc": 0,
+ "wall_s": 15.7,
+ "files_touched": [
+  "CHANGELOG.md",
+  "src/inventory/__pycache__/__init__.cpython-313.pyc",
+  "src/inventory/__pycache__/core.cpython-313.pyc",
+  "src/inventory/core.py",
+  "tests/__pycache__/test_core.cpython-313-pytest-9.1.1.pyc",
+  "tests/test_core.py"
+ ],
+ "new_src_functions": 0,
+ "R1_docstring": null,
+ "R2_no_print": true,
+ "R3_changelog": true,
+ "new_tests": 2,
+ "R4_test_names": true,
+ "R5_marker": true,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 5,
+ "applicable": 5,
+ "cost_usd": 0.058716000000000004
+}

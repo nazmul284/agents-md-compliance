@@ -1,0 +1,30 @@
+{
+ "name": "claude-agents_md-report-r1",
+ "agent": "claude",
+ "model": "claude-sonnet-5-5",
+ "condition": "agents_md",
+ "task": "report",
+ "rep": 1,
+ "rc": 0,
+ "wall_s": 23.8,
+ "files_touched": [
+  "CHANGELOG.md",
+  "src/inventory/__init__.py",
+  "src/inventory/__main__.py",
+  "src/inventory/core.py",
+  "tests/test_report.py"
+ ],
+ "new_src_functions": 4,
+ "R1_docstring": true,
+ "R2_no_print": true,
+ "R3_changelog": true,
+ "new_tests": 3,
+ "R4_test_names": true,
+ "R5_marker": true,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 6,
+ "applicable": 6,
+ "cost_usd": 0.0783542
+}

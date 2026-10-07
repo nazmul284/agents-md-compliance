@@ -1,0 +1,26 @@
+{
+ "name": "codex-none-csv-r3",
+ "agent": "codex",
+ "model": "gpt-5.6-sol",
+ "condition": "none",
+ "task": "csv",
+ "rep": 3,
+ "rc": 0,
+ "wall_s": 62.8,
+ "files_touched": [
+  "src/inventory/core.py",
+  "tests/test_core.py"
+ ],
+ "new_src_functions": 1,
+ "R1_docstring": false,
+ "R2_no_print": true,
+ "R3_changelog": false,
+ "new_tests": 1,
+ "R4_test_names": false,
+ "R5_marker": false,
+ "R6_no_deps": true,
+ "tests_pass": true,
+ "changed_code": true,
+ "score": 2,
+ "applicable": 6
+}
