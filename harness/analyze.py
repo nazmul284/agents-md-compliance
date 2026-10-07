@@ -37,3 +37,26 @@ for k, lab in RULES:
     a, b = summ["claude/none"]["per_rule"][k], summ["codex/none"]["per_rule"][k]
     L.append(f"{lab:22}{f'{a[0]}/{a[1]}':>14}{f'{b[0]}/{b[1]}':>12}")
 (R / "tables.txt").write_text("\n".join(L) + "\n"); print("\n".join(L))
+
+# ---- large-repo follow-up (results/large/*.json)
+lg = [json.load(open(f)) for f in sorted(glob.glob(str(R / "large" / "*.json")))]
+if lg:
+    gl = defaultdict(list)
+    for r in lg:
+        gl[(r["agent"], r["condition"])].append(r)
+    L4 = ["Same tasks in a 2,014-file version of the project (2 runs x 3 tasks)", "",
+          f"{'agent, instruction files':32}{'compliant':>11}{'opened file':>13}",
+          f"{'-'*31:32}{'-'*9:>11}{'-'*11:>13}"]
+    for (a, c), lab, key in ((("codex", "claude_md"), "Codex, CLAUDE.md only", "opened_CLAUDE_md"),
+                             (("codex", "agents_md"), "Codex, AGENTS.md", "opened_AGENTS_md"),
+                             (("claude", "both_no_import"), "Claude, both, no import", "opened_AGENTS_md"),
+                             (("claude", "claude_md"), "Claude, CLAUDE.md", "opened_CLAUDE_md")):
+        v = gl[(a, c)]
+        full = sum(r["score"] == r["applicable"] for r in v)
+        opened = sum(r[key] is not None for r in v)
+        L4.append(f"{lab:32}{f'{full}/{len(v)}':>11}{f'{opened}/{len(v)}':>13}")
+    L4 += ["", "'opened file' = the agent itself read the instruction file with a tool;",
+           "auto-loaded files never need to be opened."]
+    summ["large"] = {f"{a}/{c}": {"runs": len(v), "fully_compliant": sum(r["score"] == r["applicable"] for r in v)} for (a, c), v in gl.items()}
+    (R / "summary.json").write_text(json.dumps(summ, indent=1))
+    (R / "tables_large.txt").write_text("\n".join(L4) + "\n"); print("\n".join(L4))

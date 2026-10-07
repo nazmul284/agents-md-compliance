@@ -1,0 +1,11 @@
+Same tasks in a 2,014-file version of the project (2 runs x 3 tasks)
+
+agent, instruction files          compliant  opened file
+-------------------------------   ---------  -----------
+Codex, CLAUDE.md only                   6/6          6/6
+Codex, AGENTS.md                        6/6          0/6
+Claude, both, no import                 5/6          6/6
+Claude, CLAUDE.md                       6/6          0/6
+
+'opened file' = the agent itself read the instruction file with a tool;
+auto-loaded files never need to be opened.

@@ -2,7 +2,7 @@
 
 Do Claude Code and Codex follow an AGENTS.md, a CLAUDE.md, both, or neither? Six checkable house
 rules in an instruction file, three coding tasks on a small fixture project, five
-instruction-file arrangements, three runs each: 81 runs, scored from the git diff. Companion to
+instruction-file arrangements, three runs each: 81 runs, scored from the git diff, plus 3 traced runs and 24 runs in a 2,014-file version of the project. Companion to
 *Codex Followed a CLAUDE.md It Isn't Documented to Read: 81 Runs Testing AGENTS.md vs CLAUDE.md*.
 
 ![compliance](results/02-compliance.png)
@@ -35,6 +35,24 @@ marker comment                   0/9         0/9
 no new deps                      9/9         9/9
 ```
 
+## Large-repo follow-up
+
+```
+Same tasks in a 2,014-file version of the project (2 runs x 3 tasks)
+
+agent, instruction files          compliant  opened file
+-------------------------------   ---------  -----------
+Codex, CLAUDE.md only                   6/6          6/6
+Codex, AGENTS.md                        6/6          0/6
+Claude, both, no import                 5/6          6/6
+Claude, CLAUDE.md                       6/6          0/6
+
+'opened file' = the agent itself read the instruction file with a tool;
+auto-loaded files never need to be opened.
+```
+
+`python harness/make_large_fixture.py` builds the 2,014-file fixture; `python harness/run_large.py <work_dir> --reps 2` runs it.
+
 ## Layout
 
 ```
@@ -46,6 +64,8 @@ harness/trace_claude.py       re-runs the trap condition with stream-json to cap
 results/runs/*.json           one record per run
 results/trace.json            the three traced Claude runs, with their first tool calls
 results/codex_logs_claude_md/ Codex event logs for the CLAUDE.md-only runs (paths scrubbed)
+results/large/*.json          the 24 large-repo runs, with which instruction file each agent opened
+harness/output_stream.py      where each instructed CLI report sends its output (stdout vs stderr)
 ```
 
 ## Reproduce

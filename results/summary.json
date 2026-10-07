@@ -324,5 +324,23 @@
    "applicable": 6,
    "agents_md_read_at_call": 2
   }
- ]
+ ],
+ "large": {
+  "claude/both_no_import": {
+   "runs": 6,
+   "fully_compliant": 5
+  },
+  "claude/claude_md": {
+   "runs": 6,
+   "fully_compliant": 6
+  },
+  "codex/agents_md": {
+   "runs": 6,
+   "fully_compliant": 6
+  },
+  "codex/claude_md": {
+   "runs": 6,
+   "fully_compliant": 6
+  }
+ }
 }
